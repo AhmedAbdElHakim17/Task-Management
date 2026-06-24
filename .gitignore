@@ -31,3 +31,7 @@ packages/
 
 # ── Build output ──────────────────────────────────────────────────────────
 **/Publish/
+
+# ── Personal planning files (not for public repo) ─────────────────────────
+VideoWalkthroughPlan.md
+**/NotionTestChecklist.md
