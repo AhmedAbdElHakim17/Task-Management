@@ -38,8 +38,8 @@ This is the **recommended** way to run the full stack with a single command.
 
 ```bash
 # 1. Clone the repository (if you haven't already)
-git clone <your-repo-url>
-cd TaskManagement
+git clone https://github.com/ahmedelkassas17/Task-Management.git
+cd Task-Management
 
 # 2. Build and start all services (SQL Server, Redis, API)
 docker-compose up --build

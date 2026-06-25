@@ -31,15 +31,5 @@ public class AppDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-
-        modelBuilder.Entity<RefreshToken>(entity =>
-        {
-            entity.HasKey(r => r.Id);
-            entity.HasIndex(r => r.Token).IsUnique();
-            entity.HasOne<User>()
-                  .WithMany()
-                  .HasForeignKey(r => r.UserId)
-                  .OnDelete(DeleteBehavior.Cascade);
-        });
     }
 }
